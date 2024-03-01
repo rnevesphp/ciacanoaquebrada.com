@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,500;0,600;0,700;0,800;1,500&family=Roboto+Condensed:wght@100..900&display=swap');
 
+/* Standards */
+:root {
+    --poppins: "Poppins";
+    --lato: "Lato";
+    --roboto: "Roboto";
+    --grey: #eeeeee;
+    --black: #1f1616;
+    --white: #ffffff;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -8,7 +18,65 @@
     border: 0
 }
 
+/* standard de encabezado de secciones */
+.section-content {
+    padding: 0 40px 0 40px;
+}
 
+
+.section-header {
+    padding: 0 40px 0 40px;
+}
+
+.section-title {
+    text-transform: capitalize;
+    font-size: 500;
+    font-family: var(--poppins);
+    font-weight: 700;
+}
+
+/* standard de encabezado de secciones */
+
+
+
+
+
+/* HEADER */
+
+/* fondo gris wrapper general */
 header {
-    padding: 2rem 0 0 0;
+    position: sticky;
+    top: 0;
+}
+
+/* encapsulado general */
+.wrapper-header {
+    background-color: var(--white);
+    display: flex;
+
+    padding: 0 40px 0 40px;
+
+    align-items: center;
+}
+
+/* nav que contiene la lista desordenada */
+.navbar {
+    background-color: var(--white);
+}
+
+/* color de los enlaces + altura + fuente */
+a.nav-link {
+    color: var(--black);
+    font-family: var(--lato);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+a.icon-lord {
+    margin: 5px 0 0 0;
+}
+
+.s-logo {
+    display: flex;
+    align-items: center;
 }
