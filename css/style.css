@@ -4,10 +4,15 @@
 :root {
     --poppins: "Poppins";
     --lato: "Lato";
-    --roboto: "Roboto";
-    --grey: #eeeeee;
-    --black: #1f1616;
-    --white: #ffffff;
+    --roboto: "Roboto Condensed";
+
+    --color-01: #052659;
+    --color-02: #5483b3;
+    --color-03: #7da0ca;
+    --color-04: #c1e9ff;
+    --color-05: #1f1616;
+    --color-06: #ffffff;
+    --color-07: #eeeeee;
 }
 
 * {
@@ -15,7 +20,11 @@
     margin: 0;
     vertical-align: baseline;
     list-style: none;
-    border: 0
+    border: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* standard de encabezado de secciones */
@@ -30,15 +39,23 @@
 
 .section-title {
     text-transform: capitalize;
-    font-size: 500;
+    font-size: 200;
     font-family: var(--poppins);
     font-weight: 700;
 }
 
+.df {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-body {
+    font-size: 1.2rem;
+    font-family: var(--roboto);
+}
+
 /* standard de encabezado de secciones */
-
-
-
 
 
 /* HEADER */
@@ -47,29 +64,34 @@
 header {
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 /* encapsulado general */
 .wrapper-header {
-    background-color: var(--white);
     display: flex;
-
     padding: 0 40px 0 40px;
-
     align-items: center;
 }
 
 /* nav que contiene la lista desordenada */
 .navbar {
-    background-color: var(--white);
+    background-color: var(--bg-01);
 }
 
 /* color de los enlaces + altura + fuente */
 a.nav-link {
-    color: var(--black);
+    color: var(--color-05);
     font-family: var(--lato);
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.2rem;
+
+    transition: color .4s ease-in;
+}
+
+a.nav-link:hover {
+    color: var(--color-01);
+    transition: color .4s ease-in;
 }
 
 a.icon-lord {

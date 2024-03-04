@@ -26,20 +26,20 @@
 
 <body>
     <header>
-        <div class="wrapper-header z-depth-1-half row">
+        <div class="wrapper-header row">
             <div>
                 <a href="#">
                     <img src="./src/logo_canoa.svg" width="170px" height="170px" alt="">
                 </a>
             </div>
 
-            <nav class="navbar nav-wrapper z-depth-0">
+            <nav class=" hide-on-med-and-down navbar nav-wrapper z-depth-0">
                 <ul class="right">
                     <li>
                         <a class="nav-link" href="#">Inicio</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="#s-introduccion">Sobre Nosotros</a>
+                        <a class="nav-link" href="#s-sobre-nosotros">Sobre Nosotros</a>
                     </li>
                     <li>
                         <a class="nav-link" href="#s-contacto">Contacto</a>
@@ -50,7 +50,7 @@
                     <li>
                         <a class="icon-lord" href="">
                             <lord-icon src="https://cdn.lordicon.com/pbbsmkso.json" trigger="hover"
-                                colors="primary:#121331,secondary:#000000" style="width:25px;height:25px">
+                                colors="primary:#052659,secondary:#052659" style="width:25px;height:25px">
                             </lord-icon>
                         </a>
                     </li>
@@ -58,30 +58,25 @@
                 </ul>
             </nav>
         </div>
-
     </header>
 
 
     <main class="">
-        <!--   <section id="s-introduccion" class="s-introduccion">
-            <!--       <div class="media">
-                <video width="100%" autoplay loop muted>
-                    <source src="../canoa_quebrada_out.mp4" type="video/mp4" />
-                </video>
-            </div> 
-        </section> -->
-
-        <section class="s-parallax">
+        <section class="hide-on-med-and-down  s-parallax">
             <div class="parallax-container">
-                <div class="parallax"><img src="./src/hombre_foto_1.jpg" /></div>
+                <div class="parallax">
+                    <img class="responsive-img" src="./src/hombre_foto_1.jpg" />
+                </div>
             </div>
         </section>
 
-        <section id="s-sobre-nosotros" class="s-sobre-nosotros row">
-            <div class="section-header col s12 m6 l6">
-                <h1 class="section-title">Compañía <br> Canoa Quebrada</h1>
-                <div class="">
-                    <span style="border: 1px solid blue;" class="">
+        <section class="s-sobre-nosotros row">
+            <div style="border: 1px solid red;" class="col s12 m12 l12 valign-wrapper">
+
+                <div style="border: 1px solid black; margin: 0 20px 0 0;" class="col s12 m2 l2"></div>
+
+                <div style="margin: 0 0 0 20px; padding: 20px 0 40px 0;" class="col s12 m12 l5 ">
+                    <span class="text-body ">
                         Compañía Canoa Quebrada empresa fundada en 1988, especializada en comercialización de
                         artículos
                         textil, moda, deporte,
@@ -89,22 +84,37 @@
 
                         Compañía Canoa Quebrada dispone de una extensa red de más de 25 establecimientos propios y
                         asociados, distribuidos en
-                        zonas turísticas de la costa mediterránea e islas Baleares, zonas fronterizas de la
+                        zonas turísticas de la costa mediterránea e Islas Baleares, zonas fronterizas de la
                         comunidad
                         Navarra, de Cataluña y
-                        Andorra.
+                        Andorra
+
+                        <br>
+                        <br>
+
+                        La apuesta por conservar las tiendas físicas fortalece las relaciones que la empresa mantiene
+                        con las marcas, juntamente
+                        con una extensa y dilatada tradición en el sector desde 1908.
+
+                        El grupo <b>CCQ</b> también dispone de su propia web de venta e-commerce
+                        <a href="https://bigjeans.es">www.bigjeans.es</a>
                     </span>
                 </div>
-            </div>
 
-            <div class="col s12 m6 l6 center s-logo">
-                <img src="./src/logo_canoa.svg" alt="" height="200px" width="200px" />
-            </div>
+                <div style="margin: 0 20px 0 0 ;" class=" hide-on-med-and-down col s12 m6 l4 df">
+                    <img src="./src/logo_canoa.svg" alt="Logotipo de la Compañía Canoa Quebrada" height="350px"
+                        width="350px" />
+                </div>
 
+                <div style="border: 1px solid black;" class="col s12 m2 l2"></div>
+
+            </div>
         </section>
-        <section class="s-parallax">
+        <section class=" hide-on-med-and-down s-parallax">
             <div class="parallax-container">
-                <div class="parallax"><img src="./src/young-woman-with-mirror-outside.jpg" /></div>
+                <div class="parallax">
+                    <img src="./src/young-woman-with-mirror-outside.jpg" class="responsive-img" />
+                </div>
             </div>
         </section>
 
