@@ -189,9 +189,40 @@
     </main>
 
 
+
+
+
+
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large waves-circle" style="background-color: #079642;">
+            <i class="large material-icons">hola</i>
+        </a>
+        <ul>
+            <li>
+                <a href="#s-sobre-nosotros" style="background-color: #079642;" class="btn-floating"><i
+                        class="material-icons"></i></a>
+            </li>
+            <li>
+                <a href="#s-" style="background-color: #079642;" class="btn-floating"><i class="material-icons"></i></a>
+            </li>
+            <li>
+                <a href="#s-conhecimentos" style="background-color: #079642;" class="btn-floating"><i
+                        class="material-icons"></i></a>
+            </li>
+            <li>
+                <a href="#s-projetos" style="background-color: #079642;" class="btn-floating"><i
+                        class="material-icons"></i></a>
+            </li>
+            <li>
+                <a href="#s-contato" style="background-color: #079642;" class="btn-floating"><i
+                        class="material-icons"></i></a>
+            </li>
+        </ul>
+    </div>
     <footer>
 
     </footer>
+
 </body>
 <script src="https://cdn.lordicon.com/lordicon.js"></script>
 <!-- uikit -->
@@ -223,6 +254,14 @@
         var instances = M.Parallax.init(elems);
     });
 
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.fixed-action-btn');
+        var instances = M.FloatingActionButton.init(elems, {
+            direction: 'top',
+            hoverEnabled: false
+        });
+    });
 
 </script>
 
