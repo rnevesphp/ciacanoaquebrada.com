@@ -55,16 +55,24 @@ html {
     font-family: var(--roboto);
 }
 
+
 /* standard de encabezado de secciones */
 
 
 /* HEADER */
 
 /* fondo gris wrapper general */
-header {
+.fixed-header {
     position: sticky;
     top: 0;
-    z-index: 1;
+    transition: transform 0.3s ease !important;
+    /* Agregamos una transición suave */
+    z-index: 9999;
+}
+
+.fixed-header.hidden {
+    transform: translateY(-100%);
+    /* Ocultar el header fuera de la vista */
 }
 
 /* encapsulado general */
@@ -85,24 +93,57 @@ a.nav-link {
     font-family: var(--lato);
     font-weight: 400;
     font-size: 1.2rem;
+    border-radius: 5px;
 
-    transition: color .4s ease-in;
+    transition-property: color, background-color;
+    transition-duration: .4s;
+    transition-timing-function: ease-in;
 }
 
+/* color y animacion de los enlaces del header */
 a.nav-link:hover {
-    color: var(--color-01);
-    transition: color .4s ease-in;
+    background-color: var(--color-05);
+    color: var(--color-06);
+
+    text-decoration: none;
+
+    transition-property: color, background-color;
+    transition-duration: .4s;
+    transition-timing-function: ease-in;
 }
 
+/* espaciado del icono de idiomas */
 a.icon-lord {
     margin: 5px 0 0 0;
 }
 
+/* centrado del logotipo de canoa */
 .s-logo {
     display: flex;
     align-items: center;
 }
 
-.formulario-de-contacto form label {
-    padding: 0 0 15px 0;
+/* separacion de los campos del formulario */
+.formulario-de-contacto .input-text {
+    margin: 0 0 3rem 0;
+}
+
+.button-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* lateraciones de la fuente del boton del formulario */
+.formulario-de-contacto button span {
+    font-family: var(--roboto);
+    font-weight: 600;
+}
+
+.s-sobre-nosotros {
+    background-color: #e5e5e5;
+}
+
+.s-contacto {
+    background-color: #e5e5e5;
 }
