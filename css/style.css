@@ -52,6 +52,7 @@ html {
 .text-body {
     font-size: 1.2rem;
     font-family: var(--roboto);
+    color: var(--color-05);
 }
 
 .s-sobre-nosotros,
@@ -63,8 +64,6 @@ html {
 
 /* standard de encabezado de secciones */
 
-
-/* HEADER */
 
 /* fondo gris wrapper general */
 .fixed-header {
@@ -126,6 +125,10 @@ a.icon-lord {
 .s-logo {
     display: flex;
     align-items: center;
+}
+
+b {
+    color: var(--color-05);
 }
 
 /* separacion de los campos del formulario */
