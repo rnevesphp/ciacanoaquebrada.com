@@ -32,7 +32,6 @@ html {
     padding: 0 40px 0 40px;
 }
 
-
 .section-header {
     padding: 0 40px 0 40px;
 }
@@ -55,6 +54,12 @@ html {
     font-family: var(--roboto);
 }
 
+.s-sobre-nosotros,
+.S-complemento-sobre-nosotros,
+.S-contacto,
+.S-marcas {
+    padding: 3rem 0 5rem 0;
+}
 
 /* standard de encabezado de secciones */
 
