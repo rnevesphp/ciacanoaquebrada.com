@@ -55,11 +55,9 @@ html {
     color: var(--color-05);
 }
 
-.s-sobre-nosotros,
-.S-complemento-sobre-nosotros,
-.S-contacto,
-.S-marcas {
-    padding: 3rem 0 5rem 0;
+
+section {
+    padding: 0 0 0 0;
 }
 
 /* standard de encabezado de secciones */
@@ -136,11 +134,7 @@ b {
     margin: 0 0 3rem 0;
 }
 
-.button-form {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+
 
 /* lateraciones de la fuente del boton del formulario */
 .formulario-de-contacto button span {
@@ -148,10 +142,28 @@ b {
     font-weight: 600;
 }
 
-.s-sobre-nosotros {
-    background-color: #e5e5e5;
+/* espaciado interno de secciones */
+section.s-complemento-sobre-nosotros,
+section.s-marcas {
+    padding: 2.5rem 0 2.5rem 0;
 }
 
-.s-contacto {
+/* espaciado interno de secciones */
+section.s-contacto,
+section.s-sobre-nosotros {
     background-color: #e5e5e5;
+    padding: 5rem 0 5rem 0;
+}
+
+/* tamaño iconos del boton floating */
+a i.icon-btn-floating {
+    font-size: 1rem;
+}
+
+#row-brands img {
+    max-width: 120px;
+    max-height: 60px;
+    height: auto;
+
+    vertical-align: middle;
 }
