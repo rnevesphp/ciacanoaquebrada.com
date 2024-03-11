@@ -49,6 +49,11 @@ html {
     justify-content: center;
 }
 
+.df-colum {
+    display: flex;
+    flex-direction: column;
+}
+
 .text-body {
     font-size: 1.2rem;
     font-family: var(--roboto);
@@ -134,7 +139,10 @@ b {
     margin: 0 0 3rem 0;
 }
 
-
+.text-wrapper {
+    margin: 0 0 0 20px;
+    padding: 20px 0 40px 0;
+}
 
 /* lateraciones de la fuente del boton del formulario */
 .formulario-de-contacto button span {
@@ -168,6 +176,65 @@ a i.icon-btn-floating {
     vertical-align: middle;
 }
 
-.map iframe {
-    height: 12rem !important;
+.text-direccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.test {
+    border: 1px solid blue;
+}
+
+section .s-direccion {
+    padding: 2.5rem 0;
+}
+
+section .map {
+    height: 340px;
+
+    display: flex;
+    align-items: center !important;
+}
+
+section .map iframe {
+    height: 339px;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 1.5rem 0;
+    }
+
+    .wrapper-header {
+        display: flex;
+        justify-content: center;
+    }
+
+    section.s-contacto,
+    section.s-sobre-nosotros,
+    section.s-direccion {
+        padding: 2.5rem 0;
+    }
+
+    section.s-sobre-nosotros {
+        text-align: center;
+    }
+
+    .section-title {
+        text-align: center;
+    }
+
+    section .map iframe {
+        height: auto;
+    }
+
+    section .map {
+        padding: 2rem 0;
+        text-align: center;
+    }
+
+    .text-direccion {
+        padding: 2rem 0 0 0;
+    }
 }
