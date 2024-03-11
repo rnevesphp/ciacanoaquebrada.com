@@ -49,10 +49,7 @@ html {
     justify-content: center;
 }
 
-.df-colum {
-    display: flex;
-    flex-direction: column;
-}
+
 
 .text-body {
     font-size: 1.2rem;
@@ -202,13 +199,12 @@ section .map iframe {
 }
 
 @media only screen and (max-width: 600px) {
-    header {
-        padding: 1.5rem 0;
-    }
 
     .wrapper-header {
         display: flex;
         justify-content: center;
+
+        margin: 2rem 0;
     }
 
     section.s-contacto,
@@ -232,9 +228,62 @@ section .map iframe {
     section .map {
         padding: 2rem 0;
         text-align: center;
+        display: flex;
+        flex-direction: column;
     }
 
     .text-direccion {
         padding: 2rem 0 0 0;
     }
 }
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    section .map {
+        padding: 2rem 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.s-sobre-nosotros {
+        text-align: center;
+    }
+
+    section .map iframe {
+        height: auto;
+    }
+
+    .text-direccion {
+        padding: 2rem 0 0 0;
+    }
+
+    .text-body {
+        text-align: center;
+    }
+
+    .wrapper-header {
+        display: flex;
+        justify-content: center;
+
+        margin: 2rem 0;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .wrapper-header {
+        display: flex;
+        justify-content: center;
+
+        margin: 2rem 0;
+    }
+
+    section.s-sobre-nosotros {
+        text-align: center;
+    }
+
+    .text-body {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {}
