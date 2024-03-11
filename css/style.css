@@ -167,3 +167,7 @@ a i.icon-btn-floating {
 
     vertical-align: middle;
 }
+
+.map iframe {
+    height: 12rem !important;
+}
