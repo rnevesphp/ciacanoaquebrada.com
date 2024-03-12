@@ -8890,7 +8890,7 @@ input[type=range]::-ms-thumb {
         -webkit-box-direction: normal;
         -webkit-flex-direction: row;
         -ms-flex-direction: row;
-        flex-direction: row
+        flex-direction: row;
     }
 
     .datepicker-date-display {

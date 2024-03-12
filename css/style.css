@@ -13,6 +13,8 @@
     --color-05: #1f1616;
     --color-06: #ffffff;
     --color-07: #eeeeee;
+
+
 }
 
 * {
@@ -155,7 +157,8 @@ section.s-marcas {
 
 /* espaciado interno de secciones */
 section.s-contacto,
-section.s-sobre-nosotros {
+section.s-sobre-nosotros,
+section.s-direccion {
     background-color: #e5e5e5;
     padding: 5rem 0 5rem 0;
 }
@@ -179,12 +182,12 @@ a i.icon-btn-floating {
     justify-content: center;
 }
 
-.test {
-    border: 1px solid blue;
+.enlaces-politicas ul li a {
+    color: #e5e5e5;
 }
 
-section .s-direccion {
-    padding: 2.5rem 0;
+.test {
+    border: 1px solid blue;
 }
 
 section .map {
@@ -196,6 +199,52 @@ section .map {
 
 section .map iframe {
     height: 339px;
+}
+
+footer .policies {
+    background-color: #1f1616;
+    padding: 1rem 0;
+}
+
+
+footer .nota-final {
+    padding: 1rem 0;
+}
+
+.text-footer {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.enlaceDev {
+    color: #1f1616;
+
+    font-size: .9rem;
+    font-family: 'Poppins';
+    font-weight: 300;
+}
+
+.dev-link {
+    text-decoration: none;
+}
+
+.modal-content h4 {
+    font-family: 'Poppins';
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.modal-content {
+    color: #1f1616;
+    text-align: left;
+}
+
+.modal-content .title-section {
+    font-size: 1.2rem;
+    font-family: var(--roboto);
+    font-weight: 600;
+    color: #1f1616;
 }
 
 @media only screen and (max-width: 600px) {
