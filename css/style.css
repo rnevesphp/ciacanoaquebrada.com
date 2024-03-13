@@ -34,10 +34,12 @@ html {
     padding: 0 40px 0 40px;
 }
 
+/* espaciado interno del header */
 .section-header {
     padding: 0 40px 0 40px;
 }
 
+/* titulo de seccion */
 .section-title {
     text-transform: capitalize;
     font-size: 2.8rem;
@@ -45,21 +47,21 @@ html {
     font-weight: 700;
 }
 
+/* display flex - alineado central */
 .df {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-
-
+/* textos descriptivos */
 .text-body {
     font-size: 1.2rem;
     font-family: var(--roboto);
     color: var(--color-05);
 }
 
-
+/*  */
 section {
     padding: 0 0 0 0;
 }
@@ -76,6 +78,7 @@ section {
     z-index: 9999;
 }
 
+/* ocultar el header al hacer scrool */
 .fixed-header.hidden {
     transform: translateY(-100%);
     /* Ocultar el header fuera de la vista */
@@ -240,11 +243,27 @@ footer .nota-final {
     text-align: left;
 }
 
+.modal-content .link-content {
+    color: var(--color-02);
+}
+
 .modal-content .title-section {
     font-size: 1.2rem;
     font-family: var(--roboto);
     font-weight: 600;
     color: #1f1616;
+}
+
+.modal-footer .btn {
+    background-color: #1f1616;
+}
+
+.modal-footer .btn:hover {
+    background-color: #312a2a;
+}
+
+.modal-content .table-text {
+    font-size: .8rem;
 }
 
 @media only screen and (max-width: 600px) {
