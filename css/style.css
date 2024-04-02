@@ -68,7 +68,6 @@ section {
 
 /* standard de encabezado de secciones */
 
-
 /* fondo gris wrapper general */
 .fixed-header {
     position: sticky;
@@ -183,32 +182,22 @@ a i.icon-btn-floating {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    margin: 2rem 0 0 0;
 }
 
 .enlaces-politicas ul li a {
     color: #e5e5e5;
 }
 
-.test {
-    border: 1px solid blue;
-}
-
-section .map {
-    height: 340px;
-
-    display: flex;
-    align-items: center !important;
-}
-
 section .map iframe {
-    height: 339px;
+    height: 340px;
 }
 
 footer .policies {
     background-color: #1f1616;
     padding: 1rem 0;
 }
-
 
 footer .nota-final {
     padding: 1rem 0;
@@ -291,17 +280,6 @@ footer .nota-final {
 
     section .map iframe {
         height: auto;
-    }
-
-    section .map {
-        padding: 2rem 0;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .text-direccion {
-        padding: 2rem 0 0 0;
     }
 }
 
